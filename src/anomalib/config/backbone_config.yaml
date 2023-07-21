@@ -1,0 +1,72 @@
+# image_size is the image_size of images during pre-training phase, resize to this size will potentially yields better performance.
+# layers is the list of layers used for feature extraction.
+
+# timm's model
+convnext_base_384_in22ft1k:
+  image_size: 384
+  layers:
+    - stages.2.blocks.10
+    - stages.2.blocks.20
+
+convnext_small_384_in22ft1k:
+  image_size: 384
+  layers:
+    - stages.2.blocks.10
+    - stages.2.blocks.20
+
+# torch's model
+efficientnet_b4:
+  image_size: 380
+  layers:
+    - features.4
+    - features.6
+    - features.7
+
+wide_resnet50_2:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
+
+resnet18:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
+
+resnet50:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
+
+# backbone with anti-aliasing
+antialiased_wide_resnet50_2:
+  image_size: 448
+  layers:
+    - layer2
+    - layer3
+
+antialiased_wide_resnet50_2_384:
+  image_size: 384
+  layers:
+    - layer2
+    - layer3
+
+antialiased_wide_resnet101_2:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
+
+antialiased_resnet18:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
+
+antialiased_resnet50:
+  image_size: 224
+  layers:
+    - layer2
+    - layer3
