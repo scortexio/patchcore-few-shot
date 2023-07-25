@@ -14,11 +14,11 @@ For our experiments, we used a machine with a Intel(R) Xeon(R) Silver 4110 CPU @
 Parameters like batch size were determined based on this hardware, so feel free to change them.
 The instructions below were made considering an Ubuntu distribution.
 
-By default the code requires having a GPU installed. TO use only CPU, change the parameter `trainer.devices` to `1` inside `src/anomalib/models/config.yaml`
+By default the code requires having a GPU installed. To use only CPU, change the parameter `trainer.devices` to `1` inside `src/anomalib/models/config.yaml`
 
 ## Installation and running
 * Extract the code into your home directory and change directory: `cd ~/patchcore-few-shot/`
-* (Optional, but recommended) Create a virtual environment with python 3.8, you can use pyenv or another python environment manager. 
+* (Optional, but recommended) Create a virtual environment with python 3.8, you can use pyenv or another Python environment manager. 
 * Install dependencies in editable mode: `pip install -e .`
 * The experiments done in the paper can be reproduced by running the bash scripts inside the `experiments` directory.
 
